@@ -4,5 +4,14 @@ Sehun = Tk()
 Sehun.geometry("670x670") 
 Sehun.title("Sehun ")
 
+icon = PhotoImage(file = 'image.png')
+Sehun.iconphoto(True,icon)
+Sehun.config(background="#745944")
+
+my_label = Label(Sehun, text = 'WELCOME to Sehun Bot!', fontsize=20)
+my_label.config(background='#745944')
+
+
+my_label.pack()
 # shows the GUI
 Sehun.mainloop() 
