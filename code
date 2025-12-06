@@ -8,10 +8,17 @@ icon = PhotoImage(file = 'image.png')
 Sehun.iconphoto(True,icon)
 Sehun.config(background="#745944")
 
-my_label = Label(Sehun, text = 'WELCOME to Sehun Bot!', fontsize=20)
+my_label = Label(Sehun, text = 'WELCOME to Sehun Bot!')
 my_label.config(background='#745944')
-
-
 my_label.pack()
+
+def sehun_click():
+    sehun_label = Label (Sehun, text = "What is your question? ")
+    sehun_label.pack()
+    return
+
+mybutton = Button(Sehun, text = "Click Here to Chat", command = sehun_click)
+mybutton.pack()
+
 # shows the GUI
 Sehun.mainloop() 
