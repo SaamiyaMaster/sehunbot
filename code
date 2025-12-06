@@ -1,0 +1,8 @@
+from tkinter import *
+
+Sehun = Tk() 
+Sehun.geometry("670x670") 
+Sehun.title("Sehun ")
+
+# shows the GUI
+Sehun.mainloop() 
